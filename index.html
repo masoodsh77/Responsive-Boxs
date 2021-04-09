@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Responsive Boxs</title>
 </head>
 <body>
     <div class="container">
-        <div class="box">Hello</div>
-        <div class="box">Hallo</div>
-        <div class="box">Hola</div>
-        <div class="box">Namaste</div>
-        <div class="box">Salam</div>
-        <div class="box">Marhaba</div>
-        <div class="box">Hi</div>
-        <div class="box">How are you?</div>
+        <div class="box" data-aos="fade-up">Hello</div>
+        <div class="box" data-aos="fade-up-right">Hallo</div>
+        <div class="box" data-aos="flip-left">Hola</div>
+        <div class="box" data-aos="zoom-in">Namaste</div>
+        <div class="box" data-aos="zoom-out-left">Salam</div>
+        <div class="box" data-aos="zoom-out">Marhaba</div>
+        <div class="box" data-aos="fade-down-left">Hi</div>
+        <div class="box" data-aos="fade-down">How are you?</div>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
